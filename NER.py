@@ -77,16 +77,13 @@ if authentication_status:
                 st.cache_data.clear()
                 
 
-        option= option_menu("AI HUB", ["Classifier", 'N-Classifier'], icons= ['gear', 'gear'])
+        option= option_menu("AI HUB", ["NER", 'Users', 'Statistics'], icons= ['gear', 'gear'])
         
-    if option == "Classifier":
-        Classifier.run()
-    elif option == 'Statistics':
+    
+    if option == 'Statistics':
         Statistics.run()
     elif option == 'Users':
         Users.run();
-    elif option == 'N-Classifier':
-        ClassifierN.run()
     elif option== 'NER':
         NER.run()
     

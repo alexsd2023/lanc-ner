@@ -77,7 +77,7 @@ if authentication_status:
                 st.cache_data.clear()
                 
 
-        option= option_menu("AI HUB", ["NER", 'Users', 'Statistics'], icons= ['gear', 'gear'])
+        option= option_menu("AI HUB", ["NER", 'Statistics'], icons= ['gear', 'gear'])
         
     
     if option == 'Statistics':

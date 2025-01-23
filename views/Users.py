@@ -6,7 +6,7 @@ import streamlit_authenticator as stauth
 
 def run():
     msg= ''
-    with open('../credentials.yaml') as file:
+    with open('credentials.yaml') as file:
       config = yaml.load(file, Loader=SafeLoader)
 
     with st.expander("Register user"):

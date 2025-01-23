@@ -4,7 +4,7 @@
 import streamlit as st
 import base64
 from streamlit_option_menu import option_menu
-from views import  Statistics, Users, NER
+from views import Classifier,  Statistics, Users, ClassifierN
 
 
 #from streamlit_extras.app_logo import add_logo
@@ -77,18 +77,14 @@ if authentication_status:
                 st.cache_data.clear()
                 
 
-        option= option_menu("AI HUB", ["Classifier", 'N-Classifier'], icons= ['gear', 'gear'])
+        option= option_menu("AI HUB", ["NER", 'Statistics', 'Users'], icons= ['gear', 'gear'])
         
-    if option == "Classifier":
-        Classifier.run()
+    if option == "NER":
+        NER.run()
     elif option == 'Statistics':
         Statistics.run()
     elif option == 'Users':
-        Users.run();
-    elif option == 'N-Classifier':
-        ClassifierN.run()
-    elif option== 'NER':
-        NER.run()
+        Users.run()
     
 elif authentication_status == False:
    st.error('Username/password is incorrect')

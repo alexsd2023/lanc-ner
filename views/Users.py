@@ -42,7 +42,7 @@ def run():
                     authenticator= st.session_state['authenticator']
                     if authenticator.reset_password(st.session_state["username"], 'Reset password'):                      
                         st.success('Password modified successfully')
-                        with open('../credentials.yaml', 'w') as file:
+                        with open('credentials.yaml', 'w') as file:
                             yaml.dump(config, file, default_flow_style=False)
                             
                 except Exception as e:

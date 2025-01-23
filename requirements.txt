@@ -1,0 +1,18 @@
+streamlit == 1.39
+streamlit-option-menu
+numpy
+pandas
+pydeck
+matplotlib
+st-annotated-text
+htbuilder
+st_click_detector
+beautifulsoup4
+spacy
+streamlit_authenticator==0.3.2
+tensorflow
+joblib
+opencv-python-headless
+scikit-learn
+scikit-image
+spacy
